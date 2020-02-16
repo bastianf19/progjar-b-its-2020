@@ -8,6 +8,6 @@ Tugas1 :
 - MODIFIKASILAH program client.py dan server.py agar dapat MENTRANSFER file dari client ke server (letakkan program modifikasi di direktori tugas1a) 
 - MODIFIKASILAH program server.py agar dapat mengirimkan MENTRANSFER FILE yang di request oleh client (letakkan program modifikasi di direktori tugas1b) 
 - LETAKKAN di repository github anda SENDIRI dengan folder tugas1 
-
+Catatan: untuk tugas1a hanya dapat berupa textfile (.txt), sedangkan tugas1b dapat berbentuk file apapun.
  
 
