@@ -2,8 +2,8 @@ import sys
 import socket
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-server_address = ('localhost', 31000)
+portnum = int(input('Input port number(default 31000-31002):'))
+server_address = ('localhost', portnum)
 print(sys.stderr, 'connecting to %s port %s' % server_address)
 sock.connect(server_address)
 
