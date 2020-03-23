@@ -1,5 +1,5 @@
 # Repository Pemrograman Jaringan B
-## Tugas1 :
+## Tugas 1 :
 - Jalankan program server.py di 3 port yang berbeda (31000, 31001, 31002) 
 - Jalankan program client.py untuk konek ke server yang jalan pada poin sebelumnya dan mengirimkan string “PEMROGRAMAN JARINGAN TEKNIK INFORMATIKA”
 - Jalankan program server.py di 3 port yang berbeda di 2 komputer yang berbeda 
@@ -19,3 +19,20 @@
 - Menangkap paket menggunakan wireshark pada udp_fileclient.py pada jaringan lokal (127.0.0.1, port 5005).
 - Menangkap paket menggunakan wireshark pada udp_simpel.py pada komputer lain melalui wifi (192.168.1.13, port 5005 pada komputer teman saya).
 - Menangkap paket menggunakan wireshark pada udp_fileclient.py pada komputer lain melalui wifi (192.168.1.13, port 5005 pada komputer teman saya).
+
+## Tugas 3:
+Menambahkan Threading agar program dapat mendownload file bersamaan.
+
+## Tugas 4:
+### Rancanglah sebuah protokol untuk: 
+- Meletakkan file
+- Mengambil file
+- Melihat list file
+### Buatlah dokumentasi dari protokol tersebut berisikan:
+- Ketentuan membaca format
+- Daftar fitur
+- Cara melakukan request
+- Apa respon yang didapat
+### Gunakan format JSON untuk tugas ini
+### Buatlah client untuk setiap operasi tersebut
+
