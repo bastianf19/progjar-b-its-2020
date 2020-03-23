@@ -27,7 +27,7 @@ Menambahkan Threading agar program dapat mendownload file bersamaan.
 ### Rancanglah sebuah protokol untuk: 
 - Meletakkan file
 - Mengambil file
-- Melihat list file\
+- Melihat list file
 ### Buatlah dokumentasi dari protokol tersebut berisikan:
 - Ketentuan membaca format
 - Daftar fitur
