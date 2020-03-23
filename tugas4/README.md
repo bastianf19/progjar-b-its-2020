@@ -11,7 +11,7 @@ Sebelum mengambil file:\
 ![Sebelum Ambil File](https://github.com/bastianf19/progjar-b-its-2020/blob/master/tugas4/screenshot/sblmAdd.jpg)\
 Setelah mengambil file:\
 File yang diambil adalah file teks1.txt\
-![Setelah Ambil File](https://github.com/bastianf19/progjar-b-its-2020/blob/master/tugas4/screenshot/stlhGet.jpg)\
+![Setelah Ambil File](https://github.com/bastianf19/progjar-b-its-2020/blob/master/tugas4/screenshot/stlhGet.jpg)
 ## Melihat List File
 ![Melihat List File](https://github.com/bastianf19/progjar-b-its-2020/blob/master/tugas4/screenshot/list.jpg)
 
