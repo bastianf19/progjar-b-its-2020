@@ -20,7 +20,7 @@ Digunakan untuk menambahkan file ke dalam folder file
 Mengambil File
 Digunakan untuk mengambil file berdasarkan namafile dari folder file
   request: get
-  parameter : [namafile] yang akan diambil
+  parameter : [namafile yang akan diambil]
   response: File berhasil di download pada tempat client dijalankan
 
 Melihat List File
