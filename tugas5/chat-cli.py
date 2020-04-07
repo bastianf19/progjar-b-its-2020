@@ -32,9 +32,6 @@ class ChatClient:
             elif (command == 'inbox'):
                 return self.inbox()
 
-            elif (command == 'showuser'):
-                return self.showuser()
-
             elif (command == 'showuseractive'):
                 return self.showuseractive()
 
@@ -72,17 +69,6 @@ class ChatClient:
             return "username {} logged in, token {} " .format(username, self.tokenid)
         else:
             return "Error, {}" . format(result['message'])
-    
-    def showuser(self):
-        if (self.tokenid == ""):
-            return "Error, not authorized"
-        string = "showuser {} \r\n".format(self.tokenid)
-        result = self.sendstring(string)
-        print(string)
-        if result['status'] != 'OK':
-            return "Error! {}" . format(result['message'])
-        else:
-            return "{}" . format(json.dumps(result['messages']))
 
     def showuseractive(self):
         if (self.tokenid == ""):
@@ -131,10 +117,10 @@ if __name__ == "__main__":
         print('Aplikasi Chat')
         print('Login terlebih dahulu, dengan format: auth [username] [password]')
         print('Fitur (isi sesuai dengan format):')
-        print('1. send. Format: send [usernametujuan] [message]')
-        print('2. Show All User. Format: showauser')
+        print('1. Send Message. Format: send [usernametujuan] [message]')
+        print('2. Check Inbox. Format: inbox')
         print('3. Show Active User. Format: showuseractive')
         print('4. Logout. Format: logout')
         cmdline = input("Command {}:" . format(cc.tokenid))
         print(cc.proses(cmdline))
-        
+

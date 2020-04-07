@@ -41,11 +41,6 @@ class Chat:
                 username = self.sessions[sessionid]['username']
                 logging.warning("INBOX: {}" . format(sessionid))
                 return self.get_inbox(username)
-            elif (command == 'showuser'):
-                sessionid = j[1].strip()
-                username = self.sessions[sessionid]['username']
-                logging.warning("SHOWUSER: {}" . format(sessionid))
-                return self.get_showuser(username)
             elif (command == 'showuseractive'):
                 sessionid = j[1].strip()
                 username = self.sessions[sessionid]['username']
@@ -85,16 +80,6 @@ class Chat:
         if (username not in self.users):
             return False
         return self.users[username]
-    
-    def get_showuser(self, username):
-        s_fr = self.get_user(username)
-        pesan = []
-        for users in self.users:
-            if users != username:
-                pesan.append(users)
-            else:
-                pass
-        return {'status': 'OK', 'messages': pesan}
 
     def send_message(self, sessionid, username_from, username_dest, message):
         if (sessionid not in self.sessions):
