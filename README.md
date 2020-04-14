@@ -64,3 +64,26 @@ Hasil keluaran, penjelasan status keluaran
 Contoh message input dan keluaran
 Nama Fitur 2 … dst
 ```
+## Tugas 6
+Buatlah
+- Sebuah multithreaded server, buka pada port 10001 di ip address 127.0.0.1
+- Dapat melayani request dalam bentuk string seperti ini
+`GET spasi / spasi HTTP/1.0` 
+- Tanda akhir request adalah `“\r\n\r\n”`
+- Jika tanda akhir request diterima, maka balaslah dengan string 
+`“<h1>SERVER HTTP</h1>”`
+- Cobalah dengan telnet pada port 10001, dengan cara mengirimkan string 
+`GET<spasi>/<spasi>HTTP/1.0<enter><enter>`
+- Harusnya mereply dengan yang sama pada point nomor 4
+- Bukalah chrome web browser, aktifkan developer mode, bagian network
+- bukalah alamat `http://127.0.0.1:10001`
+- Screenshot-lah tampilannya
+- Kirimkan ke asisten
+
+## Tugas 7
+
+### Performance test sederhana, hanya bisa dilakukan di linux/unix based
+- Gunakan apachebenchark , dengan command ab
+- Testlah server anda dengan :
+`ab -n <jumlahrequest> -c <concurency> http://127.0.0.1:10001/`
+- Concurrency melambangkan user yang mengakses secara bersamaan, concurency berbeda dengan paralel, concurency adalah bagaimana satu resource dibagi ke sekian banyak request yang meminta layanan
