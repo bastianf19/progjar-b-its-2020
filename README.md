@@ -87,3 +87,16 @@ Buatlah
 - Testlah server anda dengan :
 `ab -n <jumlahrequest> -c <concurency> http://127.0.0.1:10001/`
 - Concurrency melambangkan user yang mengakses secara bersamaan, concurency berbeda dengan paralel, concurency adalah bagaimana satu resource dibagi ke sekian banyak request yang meminta layanan
+
+## Tugas 8
+- Updatelah kembali repository rm77
+- Buka folder progjar5
+- Dalam file http.py, telah ada implementasi method post yang masih kosong
+- Jalankan server pada `ip 127.0.0.1 dengan port 10002`
+- Bukalah browser arahkan ke`http://127.0.0.1:10002/sending.html`, isilah dengan sesuatu dan kirim
+  - Keterangan: sending.html merupakan file dengan format HTML yang dapat digunakan untuk mengambil input dari client dan mengirimkannya ke server
+- Akan keluar tulisan ‘kosong’
+- Modifikasilah agar server dapat membalas dengan isi
+  - semua  header yang dikirim dari browser
+  - Yang anda isikan di form pada saat mengisi pada poin nomor 5, misalkan mengisi “ISILAH” maka server akan mereply dengan “ISILAH” juga , dan bukan ‘kosong’
+- Laporkan aktifitas anda kepada asisten
